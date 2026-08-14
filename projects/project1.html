@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1 – Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Game Programmer Portfolio</h1>
+  </header>
+
+  <div class="detail-container">
+    <a class="back-link" href="../index.html">← 목록으로 돌아가기</a>
+
+    <h2 class="detail-title">Project 1</h2>
+    <p class="detail-subtitle">2D 액션 RPG · Unity · 2024</p>
+
+    <img class="detail-hero" src="../images/project1.jpg" alt="Project 1 대표 이미지" />
+
+    <div class="detail-section">
+      <h3>프로젝트 소개</h3>
+      <p>
+        Unity로 개발한 2D 액션 RPG입니다. 플레이어는 다양한 몬스터와 전투하며
+        스킬을 성장시켜 나갑니다. 약 6개월간 팀 프로젝트로 진행되었습니다.
+      </p>
+    </div>
+
+    <div class="detail-section">
+      <h3>사용 기술</h3>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity 2022</span>
+        <span class="tech-tag">C#</span>
+        <span class="tech-tag">Photon PUN</span>
+        <span class="tech-tag">Animator</span>
+        <span class="tech-tag">Git</span>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h3>내 역할</h3>
+      <ul>
+        <li>전투 시스템 및 스킬 트리 설계 · 구현</li>
+        <li>적 AI 상태머신(State Machine) 구현</li>
+        <li>씬 전환 및 세이브/로드 시스템 구현</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <h3>기술적 특이사항</h3>
+      <ul>
+        <li>ECS(Entity-Component-System) 패턴을 활용해 몬스터 오브젝트 풀링 구현, 드로우콜 40% 감소</li>
+        <li>커스텀 A* 병렬 경로 탐색으로 다수 적 동시 이동 시 성능 최적화</li>
+        <li>ScriptableObject 기반 스킬 데이터 구조로 기획자와의 협업 효율 개선</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2024 홍길동. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

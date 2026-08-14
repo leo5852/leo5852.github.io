@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 2 – Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Game Programmer Portfolio</h1>
+  </header>
+
+  <div class="detail-container">
+    <a class="back-link" href="../index.html">← 목록으로 돌아가기</a>
+
+    <h2 class="detail-title">Project 2</h2>
+    <p class="detail-subtitle">3D 렌더링 엔진 · DirectX 12 · 2023</p>
+
+    <img class="detail-hero" src="../images/project2.jpg" alt="Project 2 대표 이미지" />
+
+    <div class="detail-section">
+      <h3>프로젝트 소개</h3>
+      <p>
+        DirectX 12를 사용해 직접 구현한 3D 렌더링 엔진입니다.
+        PBR 재질 시스템, 그림자 매핑, 포스트 프로세싱 파이프라인을 포함합니다.
+        개인 프로젝트로 약 4개월간 진행했습니다.
+      </p>
+    </div>
+
+    <div class="detail-section">
+      <h3>사용 기술</h3>
+      <div class="tech-tags">
+        <span class="tech-tag">C++</span>
+        <span class="tech-tag">DirectX 12</span>
+        <span class="tech-tag">HLSL</span>
+        <span class="tech-tag">ImGui</span>
+        <span class="tech-tag">Assimp</span>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h3>내 역할</h3>
+      <ul>
+        <li>렌더링 파이프라인 전체 설계 및 구현 (개인 프로젝트)</li>
+        <li>PBR(Physically Based Rendering) 셰이더 작성</li>
+        <li>Cascaded Shadow Map 구현</li>
+        <li>ImGui 기반 실시간 파라미터 조정 도구 제작</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <h3>기술적 특이사항</h3>
+      <ul>
+        <li>Deferred Rendering + Tiled Light Culling으로 광원 100개 이상 동시 처리</li>
+        <li>GPU 타임스탬프 쿼리로 드로우패스별 병목 구간 프로파일링 툴 구현</li>
+        <li>Resource Descriptor Heap 관리 자동화로 바인딩 오류 방지</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2024 홍길동. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 3 – Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>Game Programmer Portfolio</h1>
+  </header>
+
+  <div class="detail-container">
+    <a class="back-link" href="../index.html">← 목록으로 돌아가기</a>
+
+    <h2 class="detail-title">Project 3</h2>
+    <p class="detail-subtitle">멀티플레이어 슈팅 · Unreal Engine 5 · 2024</p>
+
+    <img class="detail-hero" src="../images/project3.jpg" alt="Project 3 대표 이미지" />
+
+    <div class="detail-section">
+      <h3>프로젝트 소개</h3>
+      <p>
+        Unreal Engine 5로 개발한 3인칭 멀티플레이어 슈팅 게임입니다.
+        최대 8인 온라인 대전을 지원하며, 팀 프로젝트(3인)로 약 5개월간 진행했습니다.
+      </p>
+    </div>
+
+    <div class="detail-section">
+      <h3>사용 기술</h3>
+      <div class="tech-tags">
+        <span class="tech-tag">Unreal Engine 5</span>
+        <span class="tech-tag">C++</span>
+        <span class="tech-tag">Blueprint</span>
+        <span class="tech-tag">Dedicated Server</span>
+        <span class="tech-tag">Steam OSS</span>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h3>내 역할</h3>
+      <ul>
+        <li>네트워크 동기화(Replication) 구조 설계 및 구현</li>
+        <li>캐릭터 이동·사격 입력 처리 및 서버 검증 로직</li>
+        <li>게임모드·게임스테이트 설계 (점수, 라운드 시스템)</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <h3>기술적 특이사항</h3>
+      <ul>
+        <li>Client-Side Prediction + Server Reconciliation 구현으로 체감 지연 최소화</li>
+        <li>Lag Compensation(히트박스 되감기) 적용으로 고핑 환경에서도 공정한 판정</li>
+        <li>Nanite + Lumen 설정 최적화로 목표 60fps 달성 (4K 기준 PC 미드레인지)</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2024 홍길동. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
