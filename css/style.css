@@ -307,6 +307,87 @@ a {
   border: 1px solid #c8b8e8;
 }
 
+/* ===== Issue Carousel ===== */
+.issue-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.issue-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  background: #e0d4f8;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.issue-dot:hover {
+  background: #c8b8e8;
+}
+
+.issue-dot.active {
+  background: #8a72c8;
+  transform: scale(1.2);
+}
+
+.issue-carousel-body {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.issue-arrow {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d4c8f8;
+  background: #f0ebff;
+  color: #7a6ab0;
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.issue-arrow:hover {
+  background: #e0d4f8;
+}
+
+.issue-slide-viewport {
+  flex: 1;
+  min-width: 0;
+}
+
+.issue-slide {
+  display: none;
+}
+
+.issue-slide.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.issue-slide-image {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #e8e0f8;
+  box-shadow: 0 4px 16px rgba(180, 160, 230, 0.22);
+}
+
+.issue-slide-text {
+  text-align: center;
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 700px) {
   .profile {

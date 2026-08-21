@@ -54,11 +54,26 @@
 
     <div class="detail-section">
       <h3>technical issue</h3>
-      <ul>
-        <li> </li>
-        <li>MVC패턴을 적용해 구현한 map editor 기능</li>
-        <li>ScriptableObject 기반 데이터 구조로 기획자와의 협업 효율 개선</li>
-      </ul>
+      <div class="issue-carousel">
+        <div class="issue-dots">
+          <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="2번째 항목"></button>
+        </div>
+        <div class="issue-carousel-body">
+          <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
+          <div class="issue-slide-viewport">
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/square-issue1.jpg" alt="map editor 기능 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">MVC패턴을 적용해 구현한 map editor 기능</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/square-issue2.jpg" alt="ScriptableObject 데이터 구조 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">ScriptableObject 기반 데이터 구조로 기획자와의 협업 효율 개선</p>
+            </div>
+          </div>
+          <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -66,5 +81,6 @@
     <p></p>
   </footer>
 
+  <script src="../js/detail-carousel.js" defer></script>
 </body>
 </html>
