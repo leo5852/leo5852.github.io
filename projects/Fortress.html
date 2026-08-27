@@ -18,24 +18,42 @@
     <h2 class="detail-title">Project Fortress</h2>
     <p class="detail-subtitle">3D · Co-op · First Person · Unreal</p>
 
-    <img class="detail-hero" src="../images/Fortress_Capsule.png" alt="Project 2 대표 이미지" />
+    <div class="issue-carousel hero-carousel">
+      <div class="issue-dots">
+        <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
+      </div>
+      <div class="issue-carousel-body">
+        <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
+        <div class="issue-slide-viewport">
+          <div class="issue-slide">
+            <img class="issue-slide-image" src="../images/Fortress_Capsule.png" alt="Project 2 대표 이미지" onerror="this.src='../images/placeholder.svg'">
+          </div>
+          <!-- 사진/동영상 추가 시 위 .issue-slide 블록을 복사하고, 동영상은 <img> 대신
+               <video class="issue-slide-image" src="../images/파일명.mp4" controls></video> 로 넣으면 됩니다. -->
+        </div>
+        <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
+      </div>
+    </div>
 
     <div class="detail-section">
       <h3>프로젝트 소개</h3>
+      <p class="section-meta">3인 개발 · 교내 캡스톤 디자인 프로젝트</p>
       <p>
-        &nbsp;외부와 차단된 거대한 요새 속에서 팀원들과 협동하여 목적지까지 안전하게 도달하는 것이 목표입니다. 
+        &nbsp;플레이어들이 하나의 이동 요새에 함께 탑승해, 각자 역할을 나눠 맡고 전투를 치르며 목적지까지 요새를 운용하는 멀티플레이 협동 게임입니다.
         요새의 운전, 수리, 장전, 조준 등 모든 조작을 플레이어들이 분담하여 진행해야 하므로 쉴 새 없이 움직여야 합니다.
         <br>
         &nbsp;Steam OSS를 이용한 멀티플레이 기능을 지원하며, 자신의 Steam 계정 친구들을 초대할 수 있습니다. 
         또한, 보이스 챗을 지원하여 팀원들과 실시간으로 소통하며 플레이 할 수 있습니다!
+        <br><br>
+        <h3>다운로드 링크</h3>
+        <a class="download-link" href="https://drive.google.com/drive/folders/13soi9q-nEz74Ws7KwjRMc3__YZo7jl9O?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/13soi9q-nEz74Ws7KwjRMc3__YZo7jl9O</a>
       </p>
     </div>
 
     <div class="detail-section">
       <h3>사용 기술</h3>
       <div class="tech-tags">
-        <span class="tech-tag">Unreal </span>
-        <span class="tech-tag">C++</span>
+        <span class="tech-tag">Unreal Engine5(C++ & Blueprint)</span>
         <span class="tech-tag">Blender</span>
         <span class="tech-tag">Meshy</span>
         <span class="tech-tag">Perforce</span>
@@ -43,8 +61,7 @@
     </div>
 
     <div class="detail-section">
-      <h3>Contribution as ... </h3>
-      <h3>Client Programmer</h3> 
+      <h3>나의 역할</h3>
       <div class="issue-carousel">
         <div class="issue-dots">
           <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
@@ -55,11 +72,22 @@
         <div class="issue-carousel-body">
           <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
           <div class="issue-slide-viewport">
-            <p class="issue-slide">Advanced Sessions 플러그인을 사용한 스팀연동 멀티플레이어 구현</p>
-            <p class="issue-slide">요새 이동, 포탄 발사, 수리 등 게임플레이 기능 구현</p>
-            <p class="issue-slide">언리얼 애니메이션 몽타주를 이용한 수리 애니메이션 제작 및 적용</p>
-            <p class="issue-slide">언리얼 애니메이션 몽타주를 이용한 수리 애니메이션 제작 및 적용</p>
-            <p class="issue-slide"></li>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-role1.jpg" alt="스팀 세션 구현 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">Advanced Sessions 플러그인을 사용한 스팀연동 멀티플레이어 세션 구현</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-role2.jpg" alt="게임플레이 기능 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">요새 이동, 포탄 발사, 수리 등 게임플레이 기능 구현</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-role3.jpg" alt="UI/사운드 프로그래밍 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">UI/사운드 프로그래밍</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-role4.jpg" alt="수리 애니메이션 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">언리얼 애니메이션 몽타주를 이용한 수리 애니메이션 제작 및 적용</p>
+            </div>
           </div>
           <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
         </div>
@@ -68,20 +96,60 @@
 
     <div class="detail-section">
       <h3>Technical issues</h3>
-      <div class="issue-carousel">
+      <div class="issue-carousel tech-issue-carousel">
         <div class="issue-dots">
           <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
           <button type="button" class="issue-dot" aria-label="2번째 항목"></button>
           <button type="button" class="issue-dot" aria-label="3번째 항목"></button>
           <button type="button" class="issue-dot" aria-label="4번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="5번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="6번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="7번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="8번째 항목"></button>
         </div>
         <div class="issue-carousel-body">
           <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
           <div class="issue-slide-viewport">
-            <p class="issue-slide">Deferred Rendering + Tiled Light Culling으로 광원 100개 이상 동시 처리</p>
-            <p class="issue-slide">GPU 타임스탬프 쿼리로 드로우패스별 병목 구간 프로파일링 툴 구현</p>
-            <p class="issue-slide">Resource Descriptor Heap 관리 자동화로 바인딩 오류 방지</p>
-            <p class="issue-slide">anite + Lumen 설정 최적화로 목표 60fps 달성 (4K 기준 PC 미드레인지</p>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-issue1.png" alt="멀티플레이 구조 Listen Server 비교 슬라이드" onerror="this.src='../images/placeholder.svg'">
+              <h4 class="issue-slide-title">Listen Server 구조 채택</h4>
+              <p class="issue-slide-text">소규모 협동 프로젝트에 맞춰 호스트가 서버와 클라이언트 역할을 함께 수행하는 Listen Server 구조를 선택했습니다. Dedicated Server나 P2P보다 별도 인프라 없이 빠르게 구현하고 테스트할 수 있었습니다.</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-issue2.png" alt="RPC 프레임워크 Server RPC와 Owning Client 슬라이드" onerror="this.src='../images/placeholder.svg'">
+              <h4 class="issue-slide-title">Server RPC와 Owning Client 활용</h4>
+              <p class="issue-slide-text">클라이언트의 요청을 서버가 검증한 뒤 실행하도록 설계해 무기 발사 같은 핵심 로직에서 치팅을 차단했습니다. 반대로 특정 플레이어에게만 필요한 UI 갱신은 Owning Client 방식으로 처리해 불필요한 데이터 전송을 줄였습니다.</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-issue3.png" alt="NetMulticast와 네트워크 최적화 슬라이드" onerror="this.src='../images/placeholder.svg'">
+              <h4 class="issue-slide-title">NetMulticast로 연출 동기화</h4>
+              <p class="issue-slide-text">폭발 이펙트나 수리 효과음처럼 모든 플레이어가 함께 봐야 하는 연출은 NetMulticast로 동기화했습니다. 물리와 데미지 판정은 서버에서만 처리해 네트워크 부하를 줄이는 방식으로 설계했습니다.</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-issue4.png" alt="RPC 아키텍처 매트릭스 표 슬라이드" onerror="this.src='../images/placeholder.svg'">
+              <h4 class="issue-slide-title">통신 방식별 사용 기준 정립</h4>
+              <p class="issue-slide-text">개발 중 반복되던 동기화 누락과 데이터 충돌 문제를 해결하기 위해 Run on Server, Owning Client, NetMulticast, RepNotify를 상황별로 구분한 내부 기준표를 만들었습니다. 이후로는 새 기능을 추가할 때마다 이 기준에 따라 통신 방식을 결정했습니다.</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-issue5.png" alt="RPC 이벤트 흐름 다이어그램 슬라이드" onerror="this.src='../images/placeholder.svg'">
+              <h4 class="issue-slide-title">RPC 이벤트 흐름 정리</h4>
+              <p class="issue-slide-text">발사, UI 갱신, 수리 이펙트 등 주요 기능이 클라이언트와 서버 사이에서 어떻게 오가는지 다이어그램으로 정리했습니다. 팀원들과 네트워크 구조를 공유하고 논의할 때 유용하게 활용했습니다.</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-issue6.png" alt="Replication 버그 실제 사례 슬라이드" onerror="this.src='../images/placeholder.svg'">
+              <h4 class="issue-slide-title">동기화 버그 해결 사례</h4>
+              <p class="issue-slide-text">초기 버전에서는 호스트만 오브젝트와 상호작용할 수 있었고, 클라이언트가 조작한 포탑 회전이 다른 플레이어에게는 보이지 않는 문제가 있었습니다. 상호작용 로직을 Server RPC로 옮기고 결과를 Multicast로 전파하도록 수정해 해결했습니다.</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-issue7.png" alt="AI 에셋 파이프라인과 렌더링 최적화 슬라이드" onerror="this.src='../images/placeholder.svg'">
+              <h4 class="issue-slide-title">AI 에셋과 Nanite 최적화</h4>
+              <p class="issue-slide-text">Meshy로 생성한 3D 에셋은 폴리곤 수가 많아 드로우콜 부담이 컸습니다. 리토폴로지 작업 대신 UE5 Nanite를 도입하되 전차와 주요 구조물에만 선별 적용해 메모리와 성능의 균형을 맞췄습니다.</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/fortress-issue8.png" alt="이동 요새 내외부 분리 구조 슬라이드" onerror="this.src='../images/placeholder.svg'">
+              <h4 class="issue-slide-title">탑승 공간과 이동 요새 분리 설계</h4>
+              <p class="issue-slide-text">플레이어가 실제로 움직이는 요새 내부 공간과, 맵 위를 실제로 주행하는 외부 폰(ExteriorPawn)을 분리해서 구현했습니다. 두 객체가 조작 입력과 피격 정보를 서로 주고받는 구조로 동작합니다.</p>
+            </div>
           </div>
           <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
         </div>

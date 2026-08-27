@@ -287,8 +287,25 @@ a {
   line-height: 1.75;
 }
 
+.detail-section p.section-meta {
+  font-size: 0.82rem;
+  color: #9b8ec4;
+  margin-top: -6px;
+  margin-bottom: 14px;
+}
+
 .detail-section ul {
   padding-left: 20px;
+}
+
+.download-link {
+  color: #6a5aaa;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.download-link:hover {
+  color: #8a72c8;
 }
 
 .tech-tags {
@@ -384,8 +401,37 @@ a {
   box-shadow: 0 4px 16px rgba(180, 160, 230, 0.22);
 }
 
+.issue-slide-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6a5aaa;
+  text-align: center;
+}
+
 .issue-slide-text {
   text-align: center;
+}
+
+.tech-issue-carousel .issue-slide-image {
+  max-height: 480px;
+  object-fit: contain;
+  background-color: #10152a;
+}
+
+/* ===== Hero Carousel (detail-hero replacement) ===== */
+.hero-carousel {
+  margin: 28px 0 36px;
+}
+
+.hero-carousel .issue-slide-image {
+  max-height: 420px;
+  border-radius: 18px;
+  box-shadow: 0 6px 24px rgba(180, 160, 230, 0.25);
+}
+
+.hero-carousel video.issue-slide-image {
+  width: 100%;
+  background-color: #000;
 }
 
 /* ===== Responsive ===== */

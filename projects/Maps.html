@@ -18,12 +18,28 @@
     <h2 class="detail-title">Project 3</h2>
     <p class="detail-subtitle">지도 서비스 · </p>
 
-    <img class="detail-hero" src="../images/project3.jpg" alt="Project 3 대표 이미지" />
+    <div class="issue-carousel hero-carousel">
+      <div class="issue-dots">
+        <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
+      </div>
+      <div class="issue-carousel-body">
+        <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
+        <div class="issue-slide-viewport">
+          <div class="issue-slide">
+            <img class="issue-slide-image" src="../images/project3.jpg" alt="Project 3 대표 이미지" onerror="this.src='../images/placeholder.svg'">
+          </div>
+          <!-- 사진/동영상 추가 시 위 .issue-slide 블록을 복사하고, 동영상은 <img> 대신
+               <video class="issue-slide-image" src="../images/파일명.mp4" controls></video> 로 넣으면 됩니다. -->
+        </div>
+        <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
+      </div>
+    </div>
 
     <div class="detail-section">
       <h3>프로젝트 소개</h3>
+      <p class="section-meta">3인 팀 프로젝트 · 약 5개월</p>
       <p>
-        설정한 지표를 기준으로 
+        설정한 지표를 기준으로
         최대 8인 온라인 대전을 지원하며, 팀 프로젝트(3인)로 약 5개월간 진행했습니다.
       </p>
     </div>
@@ -41,20 +57,60 @@
 
     <div class="detail-section">
       <h3>내 역할</h3>
-      <ul>
-        <li>네트워크 동기화(Replication) 구조 설계 및 구현</li>
-        <li>캐릭터 이동·사격 입력 처리 및 서버 검증 로직</li>
-        <li>게임모드·게임스테이트 설계 (점수, 라운드 시스템)</li>
-      </ul>
+      <div class="issue-carousel">
+        <div class="issue-dots">
+          <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="2번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="3번째 항목"></button>
+        </div>
+        <div class="issue-carousel-body">
+          <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
+          <div class="issue-slide-viewport">
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/maps-role1.jpg" alt="네트워크 동기화 구조 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">네트워크 동기화(Replication) 구조 설계 및 구현</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/maps-role2.jpg" alt="캐릭터 이동/사격 입력 처리 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">캐릭터 이동·사격 입력 처리 및 서버 검증 로직</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/maps-role3.jpg" alt="게임모드/게임스테이트 설계 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">게임모드·게임스테이트 설계 (점수, 라운드 시스템)</p>
+            </div>
+          </div>
+          <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
+        </div>
+      </div>
     </div>
 
     <div class="detail-section">
       <h3>기술적 특이사항</h3>
-      <ul>
-        <li>Client-Side Prediction + Server Reconciliation 구현으로 체감 지연 최소화</li>
-        <li>Lag Compensation(히트박스 되감기) 적용으로 고핑 환경에서도 공정한 판정</li>
-        <li>Nanite + Lumen 설정 최적화로 목표 60fps 달성 (4K 기준 PC 미드레인지)</li>
-      </ul>
+      <div class="issue-carousel">
+        <div class="issue-dots">
+          <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="2번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="3번째 항목"></button>
+        </div>
+        <div class="issue-carousel-body">
+          <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
+          <div class="issue-slide-viewport">
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/maps-issue1.jpg" alt="Client-Side Prediction 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">Client-Side Prediction + Server Reconciliation 구현으로 체감 지연 최소화</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/maps-issue2.jpg" alt="Lag Compensation 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">Lag Compensation(히트박스 되감기) 적용으로 고핑 환경에서도 공정한 판정</p>
+            </div>
+            <div class="issue-slide">
+              <img class="issue-slide-image" src="../images/maps-issue3.jpg" alt="Nanite/Lumen 최적화 참고 이미지" onerror="this.src='../images/placeholder.svg'">
+              <p class="issue-slide-text">Nanite + Lumen 설정 최적화로 목표 60fps 달성 (4K 기준 PC 미드레인지)</p>
+            </div>
+          </div>
+          <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -62,5 +118,6 @@
     <p></p>
   </footer>
 
+  <script src="../js/detail-carousel.js" defer></script>
 </body>
 </html>
