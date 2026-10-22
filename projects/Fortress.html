@@ -26,34 +26,41 @@
         <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
         <div class="issue-slide-viewport">
           <div class="issue-slide">
-            <img class="issue-slide-image" src="../images/Fortress_Capsule.png" alt="Project 2 대표 이미지" onerror="this.src='../images/placeholder.svg'">
+            <img class="issue-slide-image" src="../images/Fortress_Capsule.png" alt="Project Fortress 대표 이미지" onerror="this.src='../images/placeholder.svg'">
           </div>
-          <!-- 사진/동영상 추가 시 위 .issue-slide 블록을 복사하고, 동영상은 <img> 대신
-               <video class="issue-slide-image" src="../images/파일명.mp4" controls></video> 로 넣으면 됩니다. -->
+          <div class="issue-slide">
+            <video class="issue-slide-image" src="../videos/Fortress_video.mp4" controls></video>
+          </div>
+          <!-- 사진/동영상 추가 시 위 .issue-slide 블록만 복사하면 됩니다 (위쪽 점은 자동으로 생김).
+               동영상은 <img> 대신 <video class="issue-slide-image" src="../videos/파일명.mp4" controls></video> -->
         </div>
+        
         <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
       </div>
     </div>
 
     <div class="detail-section">
       <h3>프로젝트 소개</h3>
-      <p class="section-meta">3인 개발 · 교내 캡스톤 디자인 프로젝트</p>
+      <p class="section-meta">3인 개발 · 교내 캡스톤 디자인 프로젝트 · 2026.03 ~ 2026.06</p>
       <p>
         &nbsp;플레이어들이 하나의 이동 요새에 함께 탑승해, 각자 역할을 나눠 맡고 전투를 치르며 목적지까지 요새를 운용하는 멀티플레이 협동 게임입니다.
         요새의 운전, 수리, 장전, 조준 등 모든 조작을 플레이어들이 분담하여 진행해야 하므로 쉴 새 없이 움직여야 합니다.
         <br>
         &nbsp;Steam OSS를 이용한 멀티플레이 기능을 지원하며, 자신의 Steam 계정 친구들을 초대할 수 있습니다. 
         또한, 보이스 챗을 지원하여 팀원들과 실시간으로 소통하며 플레이 할 수 있습니다!
-        <br><br>
-        <h3>다운로드 링크</h3>
-        <a class="download-link" href="https://drive.google.com/drive/folders/13soi9q-nEz74Ws7KwjRMc3__YZo7jl9O?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/13soi9q-nEz74Ws7KwjRMc3__YZo7jl9O</a>
       </p>
+      <br>
+      <h3>다운로드 링크</h3>
+      <a class="download-link" href="https://drive.google.com/drive/folders/13soi9q-nEz74Ws7KwjRMc3__YZo7jl9O?usp=sharing" target="_blank" rel="noopener">https://drive.google.com/drive/folders/13soi9q-nEz74Ws7KwjRMc3__YZo7jl9O</a>
+      <br><br>
+      <h3>Github 링크</h3>
+      <a class="download-link" href="https://github.com/cau-project-fortress/ProjectFortress" target="_blank" rel="noopener">https://github.com/cau-project-fortress/ProjectFortress</a>
     </div>
 
     <div class="detail-section">
       <h3>사용 기술</h3>
       <div class="tech-tags">
-        <span class="tech-tag">Unreal Engine5(C++ & Blueprint)</span>
+        <span class="tech-tag">Unreal Engine 5.7 (C++ &amp; Blueprint)</span>
         <span class="tech-tag">Blender</span>
         <span class="tech-tag">Meshy</span>
         <span class="tech-tag">Perforce</span>
@@ -62,36 +69,14 @@
 
     <div class="detail-section">
       <h3>나의 역할</h3>
-      <div class="issue-carousel">
-        <div class="issue-dots">
-          <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
-          <button type="button" class="issue-dot" aria-label="2번째 항목"></button>
-          <button type="button" class="issue-dot" aria-label="3번째 항목"></button>
-          <button type="button" class="issue-dot" aria-label="4번째 항목"></button>
-        </div>
-        <div class="issue-carousel-body">
-          <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
-          <div class="issue-slide-viewport">
-            <div class="issue-slide">
-              <img class="issue-slide-image" src="../images/fortress-role1.jpg" alt="스팀 세션 구현 참고 이미지" onerror="this.src='../images/placeholder.svg'">
-              <p class="issue-slide-text">Advanced Sessions 플러그인을 사용한 스팀연동 멀티플레이어 세션 구현</p>
-            </div>
-            <div class="issue-slide">
-              <img class="issue-slide-image" src="../images/fortress-role2.jpg" alt="게임플레이 기능 참고 이미지" onerror="this.src='../images/placeholder.svg'">
-              <p class="issue-slide-text">요새 이동, 포탄 발사, 수리 등 게임플레이 기능 구현</p>
-            </div>
-            <div class="issue-slide">
-              <img class="issue-slide-image" src="../images/fortress-role3.jpg" alt="UI/사운드 프로그래밍 참고 이미지" onerror="this.src='../images/placeholder.svg'">
-              <p class="issue-slide-text">UI/사운드 프로그래밍</p>
-            </div>
-            <div class="issue-slide">
-              <img class="issue-slide-image" src="../images/fortress-role4.jpg" alt="수리 애니메이션 참고 이미지" onerror="this.src='../images/placeholder.svg'">
-              <p class="issue-slide-text">언리얼 애니메이션 몽타주를 이용한 수리 애니메이션 제작 및 적용</p>
-            </div>
-          </div>
-          <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
-        </div>
-      </div>
+      <p class="section-meta">클라이언트 프로그래머</p>
+      <ul>
+        <li>Advanced Sessions 플러그인을 사용한 스팀연동 멀티플레이어 세션 구현</li>
+        <li>요새 이동, 포탄 발사, 수리 등 게임플레이 기능 구현</li>
+        <li>UI/사운드 프로그래밍</li>
+        <li>언리얼 애니메이션 몽타주를 이용한 수리 애니메이션 제작 및 적용</li>
+        <li>C++ 적 캐릭터 구현: 공통 베이스 클래스와 포격병 · 자폭병</li>
+      </ul>
     </div>
 
     <div class="detail-section">
@@ -106,6 +91,7 @@
           <button type="button" class="issue-dot" aria-label="6번째 항목"></button>
           <button type="button" class="issue-dot" aria-label="7번째 항목"></button>
           <button type="button" class="issue-dot" aria-label="8번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="9번째 항목"></button>
         </div>
         <div class="issue-carousel-body">
           <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
@@ -149,6 +135,11 @@
               <img class="issue-slide-image" src="../images/fortress-issue8.png" alt="이동 요새 내외부 분리 구조 슬라이드" onerror="this.src='../images/placeholder.svg'">
               <h4 class="issue-slide-title">탑승 공간과 이동 요새 분리 설계</h4>
               <p class="issue-slide-text">플레이어가 실제로 움직이는 요새 내부 공간과, 맵 위를 실제로 주행하는 외부 폰(ExteriorPawn)을 분리해서 구현했습니다. 두 객체가 조작 입력과 피격 정보를 서로 주고받는 구조로 동작합니다.</p>
+            </div>
+            <div class="issue-slide">
+              <!-- 스크린샷을 넣으려면 여기에 <img class="issue-slide-image" src="../images/fortress-issue9.png" alt="설명"> 추가 -->
+              <h4 class="issue-slide-title">상속 구조의 적 AI와 네트워크 동기화</h4>
+              <p class="issue-slide-text">체력, 피격, 사망, 사거리 같은 공통 로직은 C++ 베이스 클래스(BaseEnemyCharacter)에 두고 공격만 가상 함수로 분리해, 포격병은 계산된 탄도에 랜덤 탄퍼짐을 더해 포탄을 쏘고 자폭병은 멈추지 않고 돌진해 범위 피해를 준 뒤 사라지도록 했습니다. 체력은 RepNotify로 동기화해 클라이언트 체력바를 갱신하고, 사망 연출은 NetMulticast로 모두에게 보여 주되 액터 제거는 서버에서만 처리합니다. 적끼리의 오인 피해는 무시하고, 장갑 분류(중장갑·경장갑·자폭병)를 두어 적 종류마다 받는 데미지를 다르게 할 수 있게 했습니다.</p>
             </div>
           </div>
           <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>

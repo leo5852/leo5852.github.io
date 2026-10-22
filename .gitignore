@@ -12,3 +12,6 @@ desktop.ini
 # Temp
 *.log
 *.tmp
+
+# 압축 전 원본 영상 (GitHub 100MB 제한 때문에 제외)
+videos/_original/

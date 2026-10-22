@@ -32,3 +32,12 @@ Placeholder values in `index.html` and all `projects/*.html` that must be replac
 - Name (`홍길동`), email, university name
 - Project titles, descriptions, tech stacks, and role/highlight bullets
 - Profile and project thumbnail images
+
+## Theme
+
+Retro / classic-game look defined by CSS variables in `:root` of `css/style.css`: soft sky background, navy ink borders, hard offset shadows, muted blue and yellow accents. No gradients and no red. Font is the system stack ('Segoe UI', 'Apple SD Gothic Neo').
+
+## Carousels & media
+
+- `js/detail-carousel.js` builds the dots from the number of `.issue-slide` elements, so only add slides; carousels with one slide hide dots and arrows.
+- Videos live in `videos/`. GitHub rejects files over 100MB: compress first (720p H.264 is enough). Uncompressed originals go in `videos/_original/`, which is gitignored.

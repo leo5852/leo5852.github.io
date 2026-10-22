@@ -21,7 +21,7 @@
     </div>
     <div class="profile-right">
       <p class="profile-bio">
-        Game client programmer
+        Game programmer
       </p>
 
       <div class="profile-info">
@@ -31,7 +31,7 @@
           <p>GitHub: <a href="https://github.com/leo5852" target="_blank">github.com/leo5852</a></p>
           <br>
           <h3>학력</h3>
-          <p>중앙대학교 소프트웨어학과 - 2021.03 ~</p>
+          <p>중앙대학교 소프트웨어학과 - 2021.03 ~ 2027.02(예정)</p>
         </div>
 
         <div class="info-block">
@@ -51,10 +51,13 @@
   <!-- Projects Section -->
   <section class="projects">
     <h2 class="section-title">Projects</h2>
+
+    <!-- 완성된 프로젝트 -->
+    <h3 class="project-group-title">Completed <span class="project-group-sub">완성된 프로젝트</span></h3>
     <div class="project-grid">
 
       <a class="project-card" href="projects/SQUARE.html">
-        <img src="images/SQUARE_capsule.png" alt="SQUARE_PIC" />
+        <img src="images/SQUARE_capsule.png" alt="SQUARE::ERAUQS 대표 이미지" onerror="this.src='images/placeholder.svg'" />
         <div class="card-info">
           <h3>SQUARE::ERAUQS</h3>
           <p>시점을 바꾸며 플레이하는 2D 퍼즐 플랫포머<br/> Unity 6 사용</p>
@@ -62,13 +65,50 @@
       </a>
 
       <a class="project-card" href="projects/Fortress.html">
-        <img src="images/Fortress_Capsule.png" alt="Fortress_PIC" />
+        <img src="images/Fortress_Capsule.png" alt="Project Fortress 대표 이미지" onerror="this.src='images/placeholder.svg'" />
         <div class="card-info">
           <h3>PROJECT FORTRESS</h3>
           <p>팀원들과 요새를 운영하는 3D 협동 게임<br/> Unreal Engine 5 사용</p>
         </div>
       </a>
 
+    </div>
+
+    <!-- 진행 중인 프로젝트 -->
+    <h3 class="project-group-title">In Progress <span class="project-group-sub">진행 중인 프로젝트</span></h3>
+    <div class="project-grid">
+
+      
+      <a class="project-card" href="projects/DinoCleaner.html">
+        <span class="status-badge status-wip">진행중</span>
+        <img src="images/DinoCleaner_capsule.png" alt="DinoCleaner 대표 이미지" onerror="this.src='images/placeholder.svg'" />
+        <div class="card-info">
+          <h3>DinoCleaner</h3>
+          <p>더러워진 공룡을 씻겨 주는 3D 세차 게임<br/> Unity 6 (URP) 사용</p>
+        </div>
+      </a>
+      
+      <a class="project-card" href="projects/Extraterrarium.html">
+        <span class="status-badge status-wip">진행중</span>
+        <img src="images/Extraterrarium_capsule.png" alt="Extraterrarium 대표 이미지" onerror="this.src='images/placeholder.svg'" />
+        <div class="card-info">
+          <h3>Extraterrarium</h3>
+          <p>외계 생물들이 살아가는 PC 생태계 시뮬레이션<br/> Unity 6 (URP) 사용</p>
+        </div>
+      </a>
+      
+      <a class="project-card" href="projects/OpenEngine.html">
+        <span class="status-badge status-wip">진행중</span>
+        <img src="images/OpenEngine_capsule.png" alt="OpenEngine 대표 이미지" onerror="this.src='images/placeholder.svg'" />
+        <div class="card-info">
+          <h3>OpenEngine</h3>
+          <p>C++와 OpenGL로 직접 만드는 3D 게임 엔진<br/> Jolt Physics 연동</p>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- 숨김 처리: 동네 지표 (projects/Maps.html 파일은 그대로 유지)
       <a class="project-card" href="projects/Maps.html">
         <img src="images/project3.jpg" alt="프로젝트 3" />
         <div class="card-info">
@@ -76,16 +116,7 @@
           <p>사용자 지정 기준에 따른 지역별 점수 표시 지도</p>
         </div>
       </a>
-
-      <a class="project-card" href="projects/project4.html">
-        <img src="images/project4.jpg" alt="프로젝트 4" />
-        <div class="card-info">
-          <h3>Extraterrarium</h3>
-          <p>모바일 퍼즐 게임. Unity6 사용.</p>
-        </div>
-      </a>
-
-    </div>
+    -->
   </section>
 
   <footer class="site-footer">

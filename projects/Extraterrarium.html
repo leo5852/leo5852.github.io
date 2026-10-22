@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Extraterrarium – Portfolio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>김영준's Portfolio</h1>
+  </header>
+
+  <div class="detail-container">
+    <a class="back-link" href="../index.html">← 목록으로 돌아가기</a>
+
+    <h2 class="detail-title">Extraterrarium <span class="status-badge status-wip">진행중</span></h2>
+    <p class="detail-subtitle">3D · 생태계 시뮬레이션 · PC · Unity</p>
+
+    <div class="issue-carousel hero-carousel">
+      <div class="issue-dots">
+        <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
+      </div>
+      <div class="issue-carousel-body">
+        <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
+        <div class="issue-slide-viewport">
+          <div class="issue-slide">
+            <img class="issue-slide-image" src="../images/Extraterrarium_capsule.png" alt="Extraterrarium 대표 이미지" onerror="this.src='../images/placeholder.svg'">
+          </div>
+          <!-- 사진/동영상 추가 시 위 .issue-slide 블록만 복사하면 됩니다 (위쪽 점은 자동으로 생김).
+               동영상은 <img> 대신 <video class="issue-slide-image" src="../videos/파일명.mp4" controls></video> -->
+        </div>
+        <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h3>프로젝트 소개</h3>
+      <p class="section-meta">개인 프로젝트 · 2026.06 ~ 진행중</p>
+      <p>
+        &nbsp;외계 생물들이 테라리움 안에서 스스로 먹고, 자고, 돌아다니며 살아가는 생태계 시뮬레이션 게임입니다.
+        생물마다 배고픔과 에너지 같은 욕구가 있어 상황에 맞게 스스로 행동을 정하고, 종에 따라 서로 다른 특성을 가집니다.
+        <br>
+        &nbsp;현재는 생물 AI, 이동, 절차적 애니메이션 같은 핵심 시스템을 만들고 있습니다.
+      </p>
+      <br>
+      <h3>Github 링크</h3>
+      <a class="download-link" href="https://github.com/leo5852/Extraterrarium" target="_blank" rel="noopener">https://github.com/leo5852/Extraterrarium</a>
+    </div>
+
+    <div class="detail-section">
+      <h3>사용 기술</h3>
+      <div class="tech-tags">
+        <span class="tech-tag">Unity 6</span>
+        <span class="tech-tag">C#</span>
+        <span class="tech-tag">URP</span>
+        <span class="tech-tag">AI Navigation (NavMesh)</span>
+        <span class="tech-tag">Blender</span>
+        <span class="tech-tag">Git</span>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h3>나의 역할</h3>
+      <p class="section-meta">1인 개발 · 기획부터 구현까지 전부 담당</p>
+      <ul>
+        <li>상태 패턴(FSM) 기반 생물 AI와 틱 시스템 설계·구현</li>
+        <li>ScriptableObject 기반 종(Species) 데이터 구조 설계</li>
+        <li>NavMesh를 이용한 배회와 먹이 탐색·섭취 로직</li>
+        <li>슬라임 squash &amp; stretch, IK 다리 스텝 등 절차적 애니메이션</li>
+        <li>Blender를 이용한 간단한 생물 모델링</li>
+      </ul>
+    </div>
+
+    <div class="detail-section">
+      <h3>Technical issues</h3>
+      <div class="issue-carousel">
+        <div class="issue-dots">
+          <button type="button" class="issue-dot" aria-label="1번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="2번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="3번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="4번째 항목"></button>
+          <button type="button" class="issue-dot" aria-label="5번째 항목"></button>
+        </div>
+        <div class="issue-carousel-body">
+          <button type="button" class="issue-arrow issue-arrow-prev" aria-label="이전 항목">&lsaquo;</button>
+          <div class="issue-slide-viewport">
+            <!-- 스크린샷을 넣으려면 각 슬라이드 맨 위에
+                 <img class="issue-slide-image" src="../images/extraterrarium-issue1.png" alt="설명"> 를 추가하면 됩니다. -->
+            <div class="issue-slide">
+              <h4 class="issue-slide-title">상태 패턴으로 설계한 생물 AI</h4>
+              <p class="issue-slide-text">생물의 행동을 Idle, Hunger, Sleep 상태로 나누고, 각 상태를 Enter / Exit와 실행 함수를 가진 IState 인터페이스의 클래스로 구현했습니다. 상태 전환은 EntityController가 한 곳에서 관리하므로, 사냥 같은 새 행동을 추가할 때도 기존 상태 코드를 거의 건드리지 않고 클래스만 늘리면 됩니다.</p>
+            </div>
+            <div class="issue-slide">
+              <h4 class="issue-slide-title">틱 판단과 프레임 동작 분리</h4>
+              <p class="issue-slide-text">상태마다 실행 함수를 두 개로 나눴습니다. 이동 도착 확인, 애니메이션, 먹는 동안의 실시간 회복처럼 부드러워야 하는 동작은 매 프레임 실행하고, 욕구 감소, 상태 전환 검사, 주변 먹이 탐색처럼 무거운 판단은 TickManager가 1초마다 보내는 틱에서만 실행합니다. 생물 수가 늘어나도 판단 연산이 매 프레임 쌓이지 않도록 하기 위한 구조입니다.</p>
+            </div>
+            <div class="issue-slide">
+              <h4 class="issue-slide-title">ScriptableObject로 종 데이터 분리</h4>
+              <p class="issue-slide-text">욕구 최대치와 틱당 감소량, 상태 전환 기준값, 배회 반경, 먹이 탐지 반경 같은 값을 SpeciesData 에셋으로 분리했습니다. 새로운 종은 코드 수정 없이 에셋만 만들어 추가할 수 있고, 종마다 먹이가 되는 종 목록을 둬 이후 포식 관계로 확장할 수 있게 했습니다.</p>
+            </div>
+            <div class="issue-slide">
+              <h4 class="issue-slide-title">NavMesh 배회와 먹이 접근</h4>
+              <p class="issue-slide-text">배회할 목적지는 주변의 임의 지점을 NavMesh.SamplePosition으로 검사해 실제로 걸을 수 있는 곳만 고르고, 너무 가까운 지점은 건너뛰도록 했습니다. 먹이에 다가갈 때는 먹이의 중심점 대신 콜라이더 표면 근처의 접근 지점을 계산해 이동하므로 크기가 다른 먹이에도 자연스럽게 다가가 먹습니다. 먹이는 IConsumable 인터페이스로 남은 영양분만큼만 내주고, 다 먹히면 생물이 다시 먹이를 찾습니다.</p>
+            </div>
+            <div class="issue-slide">
+              <h4 class="issue-slide-title">애니메이션 클립 없는 절차적 애니메이션</h4>
+              <p class="issue-slide-text">슬라임형 생물은 이동 속도를 보고 사인파로 몸을 늘였다 줄이며 통통 튀고, 멈춰 있을 때는 숨 쉬듯 부풀었다 가라앉습니다. 두 다리 생물은 LegStepper가 IK 타겟을 직접 움직여, 몸을 따라오는 기준점과 발 사이가 일정 거리 이상 벌어지면 지면을 레이캐스트한 위치로 포물선을 그리며 발을 내딛습니다. 양쪽 다리가 동시에 들리지 않도록 서로의 상태를 확인해 번갈아 걷습니다.</p>
+            </div>
+          </div>
+          <button type="button" class="issue-arrow issue-arrow-next" aria-label="다음 항목">&rsaquo;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail-section">
+      <h3>진행 상황</h3>
+      <h4 class="progress-label">완료</h4>
+      <ul>
+        <li>틱 시스템과 FSM 기반 생물 AI (Idle / Hunger / Sleep)</li>
+        <li>ScriptableObject 기반 종 데이터</li>
+        <li>NavMesh 배회, 먹이 탐색 및 섭취</li>
+        <li>슬라임 절차적 애니메이션, IK 다리 스텝</li>
+      </ul>
+      <h4 class="progress-label">다음 목표</h4>
+      <ul>
+        <li>종 사이의 포식 관계와 사냥 상태(HuntState)</li>
+        <li>IK 다리 스텝에 몸 회전 반영</li>
+        <li>수면 애니메이션 적용</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <p></p>
+  </footer>
+
+  <script src="../js/detail-carousel.js" defer></script>
+</body>
+</html>
